@@ -1,0 +1,280 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 30px 100px 0px 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img {
+    width: 47px;
+    height: 52px;
+}
+
+header h1 {
+    font-family: "DM Sans", sans-serif;
+    color: #d04f4f;
+    font-size: 2.3em;
+    margin: 0px 0 16px 0;
+}
+
+/*a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}*/
+
+ul {
+    list-style: none;
+}
+
+.search {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.search input {
+    width: 103%;
+    height: 69px;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding-top: 7px;
+    padding-left: 22px;
+    border: none;
+}
+
+.search input::-webkit-input-placeholder {
+    color: #adadad;
+    font-size: 1.35em;
+}
+
+.search input::-moz-placeholder{
+    color: #adadad;
+    font-size: 1.35em;
+}
+
+.search input::-ms-input-placeholder{
+    color: #adadad;
+    font-size: 1.35em;
+}
+
+.search input::placeholder{
+    color: #adadad;
+    font-size: 1.35em;
+}
+
+.search img{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.sectionTags{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+/**********filter*************/
+
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+.searchIngredient {
+    background-color: #3282f7;
+    color: #e7e7e7;
+    border-radius: 0.4em;
+    width: 150px;
+    height: 60px;
+    padding: 0px 30px 0px 2px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.searchAppareil {
+    background-color: #68d9a4;
+    color: #e7e7e7;
+    border-radius: 0.3em;
+    width: 150px;
+    height: 60px;
+    padding: 0px 30px 0px 2px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.searchUstensil{
+    background-color: #ed6454;
+    color: #e7e7e7;
+    border-radius: 0.3em;
+    width: 150px;
+    height: 60px;
+    padding: 0px 30px 0px 2px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.btnIngredients {
+    padding: 2em;
+    margin-top: -2em;
+    margin-left: -2em;
+}
+
+.btnIngredients img {
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 27px;
+    pointer-events: none;
+}
+
+.btnAppareil img {
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 27px;
+    pointer-events: none;
+}
+
+.btnAppareil {
+    padding: 2em;
+    margin-top: -2em;
+    margin-left: -2em;
+}
+
+.btnUstensils img {
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 27px;
+    pointer-events: none;
+}
+
+/*.article {
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 163px;
+}*/
+
+.Img_article{
+    width: 360px;
+    height: 178px;
+    background-color: #c7bebe;
+    border-radius: 5px 5px 0px 0px;
+    vertical-align: middle;
+}
+
+.divrecettes {
+    width: 360px;
+    height: 186px;
+    background-color: #e7e7e7;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.time-recipe .icon {
+    display: flex;
+    margin-right: 2px;
+}
+
+.time-recipe {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.recipe-title {
+    margin-left: 10px;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.minute {
+    margin-left: 0.3em;
+}
+
+.icon p {
+    margin-top: 0em;
+    margin-right: 0.5em;
+}
+
+main {
+    display: grid;
+    gap: 0px 40px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -6em;
+}
+
+.ingredients-et-description {
+    display: flex;
+    font-size: 14px;
+    /*gap: 0.8em;*/
+}
+
+.content-ingredients {
+    width: 171px;
+    height: 105px;
+    margin-left: 10px;
+    font-size: 11px;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.manuel-recettes {
+    width: 171px;
+    height: 105px;
+    margin-left: 10px;
+   font-size: 12px;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0em;
+}
+
+.recipe-ingredient {
+    font-weight: bold;
+    height: 12px;
+    white-space: nowrap;
+}
+
+.ligne-ingredient {
+    display: flex;
+    height: 14px;
+}
+
+.quantity-unit {
+    margin-left: 2px;
+    margin-bottom: 0;
+    margin-top: 0em;
+}
+
+.quantity {
+    margin-top: 0em;
+    margin-left: 0.5em;
+}
+
+article {
+    width: 370px;
+    height: 364px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.description {
+    width: 171px;
+    height: 105px;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
